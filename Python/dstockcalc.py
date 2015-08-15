@@ -8,6 +8,7 @@ def calcAPR(stock, div):
     shares = int(int(sys.argv[1]) / stock)
     apr = shares * div * 4
     print "${0:.2f}".format(apr)
+    print "APY {0:.2f}".format((apr/int(sys.argv[1])*100.0))
 
 stock = float(sys.argv[2])
 div = float(sys.argv[3])
